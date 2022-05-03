@@ -1,9 +1,9 @@
 # sc-eQTLGen Quality Control (QC) Threshold Selection Committee
-We provide an [add-on script](QC_statistics.R) for the QC to generate the following statistics/plots when setting different MAD (Median Absolute Deviation) combinations:
+We provide an [add-on script](QC_statistics.R) to explore the QC statistics when setting different data-dependent QC metrics-thresholds based on different MAD (Median Absolute Deviation) combinations. This script will provide:
 
-* **summary statistics** of lost/kept cells for the whole dataset and/or by metadata variable. The metadata variables that should be mandatory for every group are: cell type classification (predicted.celltype.l1/predicted.celltype.l2/scpred_prediction, predicted from WG2) and the batch (sequencing lane/pool).
+* **summary statistics** of lost/kept cells for the whole dataset and/or by metadata variable. The metadata variables that should be mandatory to exploe are: cell type classification variables (predicted.celltype.l1/predicted.celltype.l2/scpred_prediction, predicted from WG2) and the batch variable (sequencing lane/pool).
 
-* **heatmap plots** for the metadata variables showing the percentage and number of lost/kept cells.
+* **heatmap plots** showing the percentage and number of lost/kept cells for the metadata variables 
 
 *Of note*: To run this script you should have successfully run WG1 and WG2 sc-eQTLGen consortium pipelines.
 
@@ -16,6 +16,12 @@ If you have any questions or issues, feel free to open an issue or directly emai
 
 ## Required Input
 This section explains the input data and it’s structure to run the [add-on script](QC_statistics.R).
+
+*Of note*: To follow better the explanations in the **Required Input** section, you can clone this repository and change your current working directory.   
+```
+git clone https://github.com/aidarripoll/wg1-qc_filtering.git  
+cd wg1-qc_filtering
+```
 
 ### Test Data
 We have provided a **test dataset** *(wg2_onek1k_subset)* that contains one pool of a 10x run from the [**OneK1K** dataset](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02293-3). Notice that it is a significantly down-sized and sub-sampled version of the whole dataset. In this test dataset, the total number of cells is 1,207 from 13 donors.
@@ -161,7 +167,7 @@ A tsv file that has in the:
 ## Running the [add-on script](QC_statistics.R)
 *Of note*: The functions called in the [add-on script](QC_statistics.R) are defined in an [external script](scripts/QC_functions.R).
 
-**1.** The first step is to clone this repository and change your current working directory.    
+**1.** If you have not done it yet, the first step would be to clone this repository and change your current working directory.    
 ```
 git clone https://github.com/aidarripoll/wg1-qc_filtering.git  
 cd wg1-qc_filtering
