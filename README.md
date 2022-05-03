@@ -50,17 +50,14 @@ The main input for the [add-on script](QC_statistics.R) is the metadata slot ([m
 * **Alternative:** You can also the WG2 seurat object ([reduced_data.RDS](/wg2-cell_type_classification/wg2_onek1k_subset/step4_reduce/reduced_data.RDS)). However, it will slow down the running time and memory of the script as we will need to read the full seurat object which can be very large depending on the number of cells (e.g., ~77K cells, 8.9G). 
 
 ### Required Data
-**wg1-qc_filtering**    
-├── azimuth_l1_l2.csv  
-├── downsampling.tab  
-├── qc_mad.tab   
-├── QC_statistics.R  
-├── QC_statistics.tar.gz  
-├── scripts  
-├── wg2-cell_type_classification  
-└── metadata_variables.tab
+**wg1-qc_filtering**
+|-- azimuth_l1_l2.csv  
+|-- downsampling.tab  
+|-- metadata_variables.tab  
+|-- qc_mad.tab  
+|-- wg2-cell_type_classification  
 
-#### QC-MAD combinations
+#### QC-MAD combinations ([qc_mad.tab](qc_mad.tab))
 A tsv file that has in the:
 * 1st column: QC metrics. By default, number of UMIs (*nCount_RNA*) and % of mitochondrial genes (*percent.mt*).
 * 2nd column: Upper or lower threshold. By default, lower for *nCount_RNA* and upper for *percent.mt*.
@@ -77,7 +74,7 @@ A tsv file that has in the:
 | nCount_RNA  | lower  | 1  | 5 |
 | percent.mt  | upper  | 1  | 5 |
 
-#### Azimuth l1-l2 pairing file
+#### Azimuth l1-l2 pairing file ([azimuth_l1_l2.csv](/azimuth_l1_l2.csv))
 A csv file that has in the:
 * 1st column: Azimuth's level 1 cell type classification (L1).
 * 2nd column: Azimuth's level 2 cell type classification (L2).
@@ -123,7 +120,7 @@ A csv file that has in the:
 
 
 ### Optional Data
-#### Metadata variables
+#### Metadata variables ([metadata_variables.tab](/metadata_variables.tab))
 A tsv file that has in the:
 * 1st column: Metadata variable name. 
 * 2nd column: Metadata variable type. 
@@ -145,7 +142,7 @@ A tsv file that has in the:
 | predicted.celltype.l1  | cell  |  
 
 
-#### Downsampling file 
+#### Downsampling file ([downsampling.tab](/downsampling.tab))
 A tsv file that has in the:
 * 1st column: Metadata variable name. 
 * 2nd column: Number of cells to use for downsampling every level of the specified metadata variable.
@@ -161,7 +158,7 @@ A tsv file that has in the:
 | ------------- | ------------- |  
 | predicted.celltype.l1  | 100  |  
 
-## Running the add-on script
+## Running the [add-on script](QC_statistics.R)
 *Of note*: The functions called in the [add-on script](QC_statistics.R) are defined in an [external script](scripts/QC_functions.R).
 
 **1.** The first step is to clone this repository and change your current working directory.    
