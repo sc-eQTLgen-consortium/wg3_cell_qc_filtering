@@ -1,5 +1,0 @@
-# ignore job array slurm files
-QC_statistics_examples.tab
-QC_statistics_examples.sh
-scripts/logs
-scripts/scripts
