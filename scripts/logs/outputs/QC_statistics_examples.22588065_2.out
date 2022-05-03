@@ -1,0 +1,219 @@
+----------------------
+Tue May  3 16:49:06 CEST 2022
+----------------------
+ 
+WARNING: ignoring environment value of R_HOME
+[1] "Loading functions from: scripts/QC_functions.R"
+[1] "Loading R packages..."
+[1] "Running QC_statistics.R on: wg2_onek1k_subset"
+[1] "Reading azimuth_l1_l2 pairing file in: azimuth_l1_l2.csv"
+[1] "Reading QC metrics and MAD combinations file in: qc_mad.tab"
+[1] "Creating output directory in: QC_statistics_examples/wg2_onek1k_subset/nCount_RNA_lower_1_5.percent.mt_upper_1_5/by_dataset/Pool/"
+[1] "Considering 2 QC metrics: nCount_RNA, percent.mt"
+[1] "nCount_RNA"
+[1] "MAD min: 1"
+[1] "MAD max: 5"
+
+[1] "percent.mt"
+[1] "MAD min: 1"
+[1] "MAD max: 5"
+
+[1] "Reading metadata in: wg2-cell_type_classification/wg2_onek1k_subset/step4_reduce/metadata.reduced_data.RDS"
+   user  system elapsed 
+  0.005   0.000   0.006 
+[1] "Adding Azimuth l1 classification to the metadata..."
+   user  system elapsed 
+  0.001   0.000   0.000 
+[1] "Calculating MADs and assigning Outlier/NotOutlier tags per cell barcode..."
+[1] "Applying qc_mad.func function to each QC metric: assigning Outlier/NotOutlier tag to each cell depending on different MADs... "
+[1] "nCount_RNA"
+[1] "lower"
+[1] "Peforming the QC filtering by Pool..."
+
+[1] "MAD: 1"
+[1] "only lower boundary..."
+[1] "The lower bound is:"
+[1] 1303.28
+
+[1] "MAD: 1.5"
+[1] "only lower boundary..."
+[1] "The lower bound is:"
+[1] 801.4197
+
+[1] "MAD: 2"
+[1] "only lower boundary..."
+[1] "The lower bound is:"
+[1] 299.5596
+
+[1] "MAD: 2.5"
+[1] "only lower boundary..."
+[1] "The lower bound is:"
+[1] -202.3005
+
+[1] "MAD: 3"
+[1] "only lower boundary..."
+[1] "The lower bound is:"
+[1] -704.1606
+
+[1] "MAD: 3.5"
+[1] "only lower boundary..."
+[1] "The lower bound is:"
+[1] -1206.021
+
+[1] "MAD: 4"
+[1] "only lower boundary..."
+[1] "The lower bound is:"
+[1] -1707.881
+
+[1] "MAD: 4.5"
+[1] "only lower boundary..."
+[1] "The lower bound is:"
+[1] -2209.741
+
+[1] "MAD: 5"
+[1] "only lower boundary..."
+[1] "The lower bound is:"
+[1] -2711.601
+
+[1] "percent.mt"
+[1] "upper"
+[1] "Peforming the QC filtering by Pool..."
+
+[1] "MAD: 1"
+[1] "only upper boundary..."
+[1] "The upper bound is:"
+[1] 4.32988
+
+[1] "MAD: 1.5"
+[1] "only upper boundary..."
+[1] "The upper bound is:"
+[1] 4.9691
+
+[1] "MAD: 2"
+[1] "only upper boundary..."
+[1] "The upper bound is:"
+[1] 5.608321
+
+[1] "MAD: 2.5"
+[1] "only upper boundary..."
+[1] "The upper bound is:"
+[1] 6.247541
+
+[1] "MAD: 3"
+[1] "only upper boundary..."
+[1] "The upper bound is:"
+[1] 6.886762
+
+[1] "MAD: 3.5"
+[1] "only upper boundary..."
+[1] "The upper bound is:"
+[1] 7.525982
+
+[1] "MAD: 4"
+[1] "only upper boundary..."
+[1] "The upper bound is:"
+[1] 8.165203
+
+[1] "MAD: 4.5"
+[1] "only upper boundary..."
+[1] "The upper bound is:"
+[1] 8.804423
+
+[1] "MAD: 5"
+[1] "only upper boundary..."
+[1] "The upper bound is:"
+[1] 9.443644
+
+[1] "Joining Outlier/NotOutlier for each QC metric..."
+[1] "Join tag (Outlier/NotOutlier)..."
+   user  system elapsed 
+ 15.587   0.255   4.995 
+[1] "Summarizing the data..."
+[1] "By dataset..."
+[1] "Counting nCells in each MAD combination"
+[1] "Summarizing by dataset..."
+[1] "Counting Outlier/NotOutlier tags..."
+[1] "Adding missing Outlier/NotOutlier tags..."
+[1] "Across the whole dataset..."
+[1] "Adding missing tag in: MAD_1.5:MAD_1 (Outlier)"
+[1] "Adding missing tag in: MAD_1.5:MAD_1.5 (Outlier)"
+[1] "Adding missing tag in: MAD_1.5:MAD_2 (Outlier)"
+[1] "Adding missing tag in: MAD_1.5:MAD_2.5 (Outlier)"
+[1] "Adding missing tag in: MAD_1.5:MAD_3 (Outlier)"
+[1] "Adding missing tag in: MAD_1.5:MAD_3.5 (Outlier)"
+[1] "Adding missing tag in: MAD_1.5:MAD_4 (Outlier)"
+[1] "Adding missing tag in: MAD_1.5:MAD_4.5 (Outlier)"
+[1] "Adding missing tag in: MAD_1.5:MAD_5 (Outlier)"
+[1] "Adding missing tag in: MAD_2:MAD_1 (Outlier)"
+[1] "Adding missing tag in: MAD_2:MAD_1.5 (Outlier)"
+[1] "Adding missing tag in: MAD_2:MAD_2 (Outlier)"
+[1] "Adding missing tag in: MAD_2:MAD_2.5 (Outlier)"
+[1] "Adding missing tag in: MAD_2:MAD_3 (Outlier)"
+[1] "Adding missing tag in: MAD_2:MAD_3.5 (Outlier)"
+[1] "Adding missing tag in: MAD_2:MAD_4 (Outlier)"
+[1] "Adding missing tag in: MAD_2:MAD_4.5 (Outlier)"
+[1] "Adding missing tag in: MAD_2:MAD_5 (Outlier)"
+[1] "Adding missing tag in: MAD_2.5:MAD_1 (Outlier)"
+[1] "Adding missing tag in: MAD_2.5:MAD_1.5 (Outlier)"
+[1] "Adding missing tag in: MAD_2.5:MAD_2 (Outlier)"
+[1] "Adding missing tag in: MAD_2.5:MAD_2.5 (Outlier)"
+[1] "Adding missing tag in: MAD_2.5:MAD_3 (Outlier)"
+[1] "Adding missing tag in: MAD_2.5:MAD_3.5 (Outlier)"
+[1] "Adding missing tag in: MAD_2.5:MAD_4 (Outlier)"
+[1] "Adding missing tag in: MAD_2.5:MAD_4.5 (Outlier)"
+[1] "Adding missing tag in: MAD_2.5:MAD_5 (Outlier)"
+[1] "Adding missing tag in: MAD_3:MAD_1 (Outlier)"
+[1] "Adding missing tag in: MAD_3:MAD_1.5 (Outlier)"
+[1] "Adding missing tag in: MAD_3:MAD_2 (Outlier)"
+[1] "Adding missing tag in: MAD_3:MAD_2.5 (Outlier)"
+[1] "Adding missing tag in: MAD_3:MAD_3 (Outlier)"
+[1] "Adding missing tag in: MAD_3:MAD_3.5 (Outlier)"
+[1] "Adding missing tag in: MAD_3:MAD_4 (Outlier)"
+[1] "Adding missing tag in: MAD_3:MAD_4.5 (Outlier)"
+[1] "Adding missing tag in: MAD_3:MAD_5 (Outlier)"
+[1] "Adding missing tag in: MAD_3.5:MAD_1 (Outlier)"
+[1] "Adding missing tag in: MAD_3.5:MAD_1.5 (Outlier)"
+[1] "Adding missing tag in: MAD_3.5:MAD_2 (Outlier)"
+[1] "Adding missing tag in: MAD_3.5:MAD_2.5 (Outlier)"
+[1] "Adding missing tag in: MAD_3.5:MAD_3 (Outlier)"
+[1] "Adding missing tag in: MAD_3.5:MAD_3.5 (Outlier)"
+[1] "Adding missing tag in: MAD_3.5:MAD_4 (Outlier)"
+[1] "Adding missing tag in: MAD_3.5:MAD_4.5 (Outlier)"
+[1] "Adding missing tag in: MAD_3.5:MAD_5 (Outlier)"
+[1] "Adding missing tag in: MAD_4:MAD_1 (Outlier)"
+[1] "Adding missing tag in: MAD_4:MAD_1.5 (Outlier)"
+[1] "Adding missing tag in: MAD_4:MAD_2 (Outlier)"
+[1] "Adding missing tag in: MAD_4:MAD_2.5 (Outlier)"
+[1] "Adding missing tag in: MAD_4:MAD_3 (Outlier)"
+[1] "Adding missing tag in: MAD_4:MAD_3.5 (Outlier)"
+[1] "Adding missing tag in: MAD_4:MAD_4 (Outlier)"
+[1] "Adding missing tag in: MAD_4:MAD_4.5 (Outlier)"
+[1] "Adding missing tag in: MAD_4:MAD_5 (Outlier)"
+[1] "Adding missing tag in: MAD_4.5:MAD_1 (Outlier)"
+[1] "Adding missing tag in: MAD_4.5:MAD_1.5 (Outlier)"
+[1] "Adding missing tag in: MAD_4.5:MAD_2 (Outlier)"
+[1] "Adding missing tag in: MAD_4.5:MAD_2.5 (Outlier)"
+[1] "Adding missing tag in: MAD_4.5:MAD_3 (Outlier)"
+[1] "Adding missing tag in: MAD_4.5:MAD_3.5 (Outlier)"
+[1] "Adding missing tag in: MAD_4.5:MAD_4 (Outlier)"
+[1] "Adding missing tag in: MAD_4.5:MAD_4.5 (Outlier)"
+[1] "Adding missing tag in: MAD_4.5:MAD_5 (Outlier)"
+[1] "Adding missing tag in: MAD_5:MAD_1 (Outlier)"
+[1] "Adding missing tag in: MAD_5:MAD_1.5 (Outlier)"
+[1] "Adding missing tag in: MAD_5:MAD_2 (Outlier)"
+[1] "Adding missing tag in: MAD_5:MAD_2.5 (Outlier)"
+[1] "Adding missing tag in: MAD_5:MAD_3 (Outlier)"
+[1] "Adding missing tag in: MAD_5:MAD_3.5 (Outlier)"
+[1] "Adding missing tag in: MAD_5:MAD_4 (Outlier)"
+[1] "Adding missing tag in: MAD_5:MAD_4.5 (Outlier)"
+[1] "Adding missing tag in: MAD_5:MAD_5 (Outlier)"
+   user  system elapsed 
+  0.245   0.013   0.279 
+[1] "Saving summarized output in: QC_statistics_examples/wg2_onek1k_subset/nCount_RNA_lower_1_5.percent.mt_upper_1_5/by_dataset/Pool/tag.rds"
+   user  system elapsed 
+  0.001   0.000   0.002 
+ 
+----------------------
+Tue May  3 16:49:19 CEST 2022
+----------------------
+ 

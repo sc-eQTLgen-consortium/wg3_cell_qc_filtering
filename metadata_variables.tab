@@ -1,0 +1,6 @@
+md_var	type
+Pool	donor
+Assignment	donor
+predicted.celltype.l2	cell
+scpred_prediction	cell
+predicted.celltype.l1	cell
