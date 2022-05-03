@@ -1,0 +1,442 @@
+xaxis	yaxis	Freq	Prop
+B intermediate	B intermediate	3	0.214285714285714
+B memory	B intermediate	5	0.128205128205128
+B naive	B intermediate	0	0
+CD14 Mono	B intermediate	0	0
+CD16 Mono	B intermediate	0	0
+CD4 CTL	B intermediate	0	0
+CD4 Naive	B intermediate	0	0
+CD4 TCM	B intermediate	0	0
+CD4 TEM	B intermediate	0	0
+CD8 Naive	B intermediate	0	0
+CD8 TCM	B intermediate	0	0
+CD8 TEM	B intermediate	0	0
+MAIT	B intermediate	0	0
+NK	B intermediate	0	0
+Platelet	B intermediate	0	0
+Treg	B intermediate	0	0
+cDC1	B intermediate	0	0
+cDC2	B intermediate	0	0
+dnT	B intermediate	0	0
+gdT	B intermediate	0	0
+pDC	B intermediate	0	0
+B intermediate	B memory	0	0
+B memory	B memory	8	0.205128205128205
+B naive	B memory	1	0.0147058823529412
+CD14 Mono	B memory	0	0
+CD16 Mono	B memory	0	0
+CD4 CTL	B memory	0	0
+CD4 Naive	B memory	0	0
+CD4 TCM	B memory	0	0
+CD4 TEM	B memory	0	0
+CD8 Naive	B memory	0	0
+CD8 TCM	B memory	0	0
+CD8 TEM	B memory	0	0
+MAIT	B memory	0	0
+NK	B memory	0	0
+Platelet	B memory	0	0
+Treg	B memory	0	0
+cDC1	B memory	0	0
+cDC2	B memory	0	0
+dnT	B memory	0	0
+gdT	B memory	0	0
+pDC	B memory	0	0
+B intermediate	B naive	3	0.214285714285714
+B memory	B naive	1	0.0256410256410256
+B naive	B naive	46	0.676470588235294
+CD14 Mono	B naive	0	0
+CD16 Mono	B naive	0	0
+CD4 CTL	B naive	0	0
+CD4 Naive	B naive	0	0
+CD4 TCM	B naive	0	0
+CD4 TEM	B naive	0	0
+CD8 Naive	B naive	0	0
+CD8 TCM	B naive	0	0
+CD8 TEM	B naive	0	0
+MAIT	B naive	0	0
+NK	B naive	0	0
+Platelet	B naive	0	0
+Treg	B naive	0	0
+cDC1	B naive	0	0
+cDC2	B naive	0	0
+dnT	B naive	0	0
+gdT	B naive	0	0
+pDC	B naive	0	0
+B intermediate	CD14 Mono	0	0
+B memory	CD14 Mono	0	0
+B naive	CD14 Mono	5	0.0735294117647059
+CD14 Mono	CD14 Mono	36	0.5625
+CD16 Mono	CD14 Mono	5	0.178571428571429
+CD4 CTL	CD14 Mono	0	0
+CD4 Naive	CD14 Mono	0	0
+CD4 TCM	CD14 Mono	0	0
+CD4 TEM	CD14 Mono	0	0
+CD8 Naive	CD14 Mono	0	0
+CD8 TCM	CD14 Mono	0	0
+CD8 TEM	CD14 Mono	0	0
+MAIT	CD14 Mono	0	0
+NK	CD14 Mono	0	0
+Platelet	CD14 Mono	0	0
+Treg	CD14 Mono	0	0
+cDC1	CD14 Mono	0	0
+cDC2	CD14 Mono	1	0.5
+dnT	CD14 Mono	0	0
+gdT	CD14 Mono	0	0
+pDC	CD14 Mono	0	0
+B intermediate	CD16 Mono	0	0
+B memory	CD16 Mono	0	0
+B naive	CD16 Mono	0	0
+CD14 Mono	CD16 Mono	0	0
+CD16 Mono	CD16 Mono	12	0.428571428571429
+CD4 CTL	CD16 Mono	0	0
+CD4 Naive	CD16 Mono	0	0
+CD4 TCM	CD16 Mono	0	0
+CD4 TEM	CD16 Mono	0	0
+CD8 Naive	CD16 Mono	0	0
+CD8 TCM	CD16 Mono	0	0
+CD8 TEM	CD16 Mono	0	0
+MAIT	CD16 Mono	0	0
+NK	CD16 Mono	0	0
+Platelet	CD16 Mono	0	0
+Treg	CD16 Mono	0	0
+cDC1	CD16 Mono	0	0
+cDC2	CD16 Mono	0	0
+dnT	CD16 Mono	0	0
+gdT	CD16 Mono	0	0
+pDC	CD16 Mono	0	0
+B intermediate	CD4 CTL	0	0
+B memory	CD4 CTL	0	0
+B naive	CD4 CTL	0	0
+CD14 Mono	CD4 CTL	0	0
+CD16 Mono	CD4 CTL	0	0
+CD4 CTL	CD4 CTL	2	0.142857142857143
+CD4 Naive	CD4 CTL	0	0
+CD4 TCM	CD4 CTL	0	0
+CD4 TEM	CD4 CTL	0	0
+CD8 Naive	CD4 CTL	0	0
+CD8 TCM	CD4 CTL	0	0
+CD8 TEM	CD4 CTL	3	0.0142857142857143
+MAIT	CD4 CTL	0	0
+NK	CD4 CTL	0	0
+Platelet	CD4 CTL	0	0
+Treg	CD4 CTL	0	0
+cDC1	CD4 CTL	0	0
+cDC2	CD4 CTL	0	0
+dnT	CD4 CTL	0	0
+gdT	CD4 CTL	0	0
+pDC	CD4 CTL	0	0
+B intermediate	CD4 Naive	4	0.285714285714286
+B memory	CD4 Naive	13	0.333333333333333
+B naive	CD4 Naive	12	0.176470588235294
+CD14 Mono	CD4 Naive	0	0
+CD16 Mono	CD4 Naive	2	0.0714285714285714
+CD4 CTL	CD4 Naive	1	0.0714285714285714
+CD4 Naive	CD4 Naive	245	0.942307692307692
+CD4 TCM	CD4 Naive	153	0.590733590733591
+CD4 TEM	CD4 Naive	13	0.464285714285714
+CD8 Naive	CD4 Naive	5	0.116279069767442
+CD8 TCM	CD4 Naive	1	0.25
+CD8 TEM	CD4 Naive	21	0.1
+MAIT	CD4 Naive	0	0
+NK	CD4 Naive	10	0.0757575757575758
+Platelet	CD4 Naive	0	0
+Treg	CD4 Naive	7	0.368421052631579
+cDC1	CD4 Naive	0	0
+cDC2	CD4 Naive	0	0
+dnT	CD4 Naive	1	0.333333333333333
+gdT	CD4 Naive	0	0
+pDC	CD4 Naive	0	0
+B intermediate	CD4 TCM	0	0
+B memory	CD4 TCM	0	0
+B naive	CD4 TCM	0	0
+CD14 Mono	CD4 TCM	0	0
+CD16 Mono	CD4 TCM	0	0
+CD4 CTL	CD4 TCM	4	0.285714285714286
+CD4 Naive	CD4 TCM	0	0
+CD4 TCM	CD4 TCM	91	0.351351351351351
+CD4 TEM	CD4 TCM	11	0.392857142857143
+CD8 Naive	CD4 TCM	0	0
+CD8 TCM	CD4 TCM	0	0
+CD8 TEM	CD4 TCM	3	0.0142857142857143
+MAIT	CD4 TCM	0	0
+NK	CD4 TCM	1	0.00757575757575758
+Platelet	CD4 TCM	0	0
+Treg	CD4 TCM	1	0.0526315789473684
+cDC1	CD4 TCM	0	0
+cDC2	CD4 TCM	0	0
+dnT	CD4 TCM	0	0
+gdT	CD4 TCM	0	0
+pDC	CD4 TCM	0	0
+B intermediate	CD4 TEM	0	0
+B memory	CD4 TEM	0	0
+B naive	CD4 TEM	0	0
+CD14 Mono	CD4 TEM	0	0
+CD16 Mono	CD4 TEM	0	0
+CD4 CTL	CD4 TEM	5	0.357142857142857
+CD4 Naive	CD4 TEM	0	0
+CD4 TCM	CD4 TEM	0	0
+CD4 TEM	CD4 TEM	0	0
+CD8 Naive	CD4 TEM	0	0
+CD8 TCM	CD4 TEM	0	0
+CD8 TEM	CD4 TEM	26	0.123809523809524
+MAIT	CD4 TEM	1	0.0909090909090909
+NK	CD4 TEM	18	0.136363636363636
+Platelet	CD4 TEM	0	0
+Treg	CD4 TEM	0	0
+cDC1	CD4 TEM	0	0
+cDC2	CD4 TEM	0	0
+dnT	CD4 TEM	0	0
+gdT	CD4 TEM	0	0
+pDC	CD4 TEM	0	0
+B intermediate	CD8 Naive	3	0.214285714285714
+B memory	CD8 Naive	10	0.256410256410256
+B naive	CD8 Naive	4	0.0588235294117647
+CD14 Mono	CD8 Naive	0	0
+CD16 Mono	CD8 Naive	0	0
+CD4 CTL	CD8 Naive	1	0.0714285714285714
+CD4 Naive	CD8 Naive	15	0.0576923076923077
+CD4 TCM	CD8 Naive	4	0.0154440154440154
+CD4 TEM	CD8 Naive	4	0.142857142857143
+CD8 Naive	CD8 Naive	38	0.883720930232558
+CD8 TCM	CD8 Naive	1	0.25
+CD8 TEM	CD8 Naive	58	0.276190476190476
+MAIT	CD8 Naive	0	0
+NK	CD8 Naive	27	0.204545454545455
+Platelet	CD8 Naive	0	0
+Treg	CD8 Naive	0	0
+cDC1	CD8 Naive	0	0
+cDC2	CD8 Naive	0	0
+dnT	CD8 Naive	0	0
+gdT	CD8 Naive	1	1
+pDC	CD8 Naive	0	0
+B intermediate	CD8 TCM	0	0
+B memory	CD8 TCM	0	0
+B naive	CD8 TCM	0	0
+CD14 Mono	CD8 TCM	0	0
+CD16 Mono	CD8 TCM	0	0
+CD4 CTL	CD8 TCM	1	0.0714285714285714
+CD4 Naive	CD8 TCM	0	0
+CD4 TCM	CD8 TCM	3	0.0115830115830116
+CD4 TEM	CD8 TCM	0	0
+CD8 Naive	CD8 TCM	0	0
+CD8 TCM	CD8 TCM	2	0.5
+CD8 TEM	CD8 TCM	28	0.133333333333333
+MAIT	CD8 TCM	0	0
+NK	CD8 TCM	7	0.053030303030303
+Platelet	CD8 TCM	0	0
+Treg	CD8 TCM	0	0
+cDC1	CD8 TCM	0	0
+cDC2	CD8 TCM	0	0
+dnT	CD8 TCM	0	0
+gdT	CD8 TCM	0	0
+pDC	CD8 TCM	0	0
+B intermediate	CD8 TEM	1	0.0714285714285714
+B memory	CD8 TEM	1	0.0256410256410256
+B naive	CD8 TEM	0	0
+CD14 Mono	CD8 TEM	26	0.40625
+CD16 Mono	CD8 TEM	3	0.107142857142857
+CD4 CTL	CD8 TEM	0	0
+CD4 Naive	CD8 TEM	0	0
+CD4 TCM	CD8 TEM	0	0
+CD4 TEM	CD8 TEM	0	0
+CD8 Naive	CD8 TEM	0	0
+CD8 TCM	CD8 TEM	0	0
+CD8 TEM	CD8 TEM	68	0.323809523809524
+MAIT	CD8 TEM	1	0.0909090909090909
+NK	CD8 TEM	0	0
+Platelet	CD8 TEM	0	0
+Treg	CD8 TEM	0	0
+cDC1	CD8 TEM	0	0
+cDC2	CD8 TEM	0	0
+dnT	CD8 TEM	0	0
+gdT	CD8 TEM	0	0
+pDC	CD8 TEM	0	0
+B intermediate	MAIT	0	0
+B memory	MAIT	0	0
+B naive	MAIT	0	0
+CD14 Mono	MAIT	0	0
+CD16 Mono	MAIT	0	0
+CD4 CTL	MAIT	0	0
+CD4 Naive	MAIT	0	0
+CD4 TCM	MAIT	0	0
+CD4 TEM	MAIT	0	0
+CD8 Naive	MAIT	0	0
+CD8 TCM	MAIT	0	0
+CD8 TEM	MAIT	0	0
+MAIT	MAIT	9	0.818181818181818
+NK	MAIT	0	0
+Platelet	MAIT	0	0
+Treg	MAIT	0	0
+cDC1	MAIT	0	0
+cDC2	MAIT	0	0
+dnT	MAIT	0	0
+gdT	MAIT	0	0
+pDC	MAIT	0	0
+B intermediate	NK	0	0
+B memory	NK	0	0
+B naive	NK	0	0
+CD14 Mono	NK	1	0.015625
+CD16 Mono	NK	6	0.214285714285714
+CD4 CTL	NK	0	0
+CD4 Naive	NK	0	0
+CD4 TCM	NK	0	0
+CD4 TEM	NK	0	0
+CD8 Naive	NK	0	0
+CD8 TCM	NK	0	0
+CD8 TEM	NK	2	0.00952380952380952
+MAIT	NK	0	0
+NK	NK	63	0.477272727272727
+Platelet	NK	0	0
+Treg	NK	0	0
+cDC1	NK	0	0
+cDC2	NK	0	0
+dnT	NK	0	0
+gdT	NK	0	0
+pDC	NK	0	0
+B intermediate	Platelet	0	0
+B memory	Platelet	0	0
+B naive	Platelet	0	0
+CD14 Mono	Platelet	0	0
+CD16 Mono	Platelet	0	0
+CD4 CTL	Platelet	0	0
+CD4 Naive	Platelet	0	0
+CD4 TCM	Platelet	0	0
+CD4 TEM	Platelet	0	0
+CD8 Naive	Platelet	0	0
+CD8 TCM	Platelet	0	0
+CD8 TEM	Platelet	0	0
+MAIT	Platelet	0	0
+NK	Platelet	0	0
+Platelet	Platelet	1	1
+Treg	Platelet	0	0
+cDC1	Platelet	0	0
+cDC2	Platelet	0	0
+dnT	Platelet	0	0
+gdT	Platelet	0	0
+pDC	Platelet	0	0
+B intermediate	Treg	0	0
+B memory	Treg	1	0.0256410256410256
+B naive	Treg	0	0
+CD14 Mono	Treg	0	0
+CD16 Mono	Treg	0	0
+CD4 CTL	Treg	0	0
+CD4 Naive	Treg	0	0
+CD4 TCM	Treg	8	0.0308880308880309
+CD4 TEM	Treg	0	0
+CD8 Naive	Treg	0	0
+CD8 TCM	Treg	0	0
+CD8 TEM	Treg	0	0
+MAIT	Treg	0	0
+NK	Treg	2	0.0151515151515152
+Platelet	Treg	0	0
+Treg	Treg	11	0.578947368421053
+cDC1	Treg	0	0
+cDC2	Treg	0	0
+dnT	Treg	0	0
+gdT	Treg	0	0
+pDC	Treg	0	0
+B intermediate	cDC1	0	0
+B memory	cDC1	0	0
+B naive	cDC1	0	0
+CD14 Mono	cDC1	0	0
+CD16 Mono	cDC1	0	0
+CD4 CTL	cDC1	0	0
+CD4 Naive	cDC1	0	0
+CD4 TCM	cDC1	0	0
+CD4 TEM	cDC1	0	0
+CD8 Naive	cDC1	0	0
+CD8 TCM	cDC1	0	0
+CD8 TEM	cDC1	0	0
+MAIT	cDC1	0	0
+NK	cDC1	0	0
+Platelet	cDC1	0	0
+Treg	cDC1	0	0
+cDC1	cDC1	1	1
+cDC2	cDC1	0	0
+dnT	cDC1	0	0
+gdT	cDC1	0	0
+pDC	cDC1	0	0
+B intermediate	cDC2	0	0
+B memory	cDC2	0	0
+B naive	cDC2	0	0
+CD14 Mono	cDC2	1	0.015625
+CD16 Mono	cDC2	0	0
+CD4 CTL	cDC2	0	0
+CD4 Naive	cDC2	0	0
+CD4 TCM	cDC2	0	0
+CD4 TEM	cDC2	0	0
+CD8 Naive	cDC2	0	0
+CD8 TCM	cDC2	0	0
+CD8 TEM	cDC2	0	0
+MAIT	cDC2	0	0
+NK	cDC2	0	0
+Platelet	cDC2	0	0
+Treg	cDC2	0	0
+cDC1	cDC2	0	0
+cDC2	cDC2	1	0.5
+dnT	cDC2	0	0
+gdT	cDC2	0	0
+pDC	cDC2	4	0.666666666666667
+B intermediate	dnT	0	0
+B memory	dnT	0	0
+B naive	dnT	0	0
+CD14 Mono	dnT	0	0
+CD16 Mono	dnT	0	0
+CD4 CTL	dnT	0	0
+CD4 Naive	dnT	0	0
+CD4 TCM	dnT	0	0
+CD4 TEM	dnT	0	0
+CD8 Naive	dnT	0	0
+CD8 TCM	dnT	0	0
+CD8 TEM	dnT	0	0
+MAIT	dnT	0	0
+NK	dnT	0	0
+Platelet	dnT	0	0
+Treg	dnT	0	0
+cDC1	dnT	0	0
+cDC2	dnT	0	0
+dnT	dnT	2	0.666666666666667
+gdT	dnT	0	0
+pDC	dnT	0	0
+B intermediate	gdT	0	0
+B memory	gdT	0	0
+B naive	gdT	0	0
+CD14 Mono	gdT	0	0
+CD16 Mono	gdT	0	0
+CD4 CTL	gdT	0	0
+CD4 Naive	gdT	0	0
+CD4 TCM	gdT	0	0
+CD4 TEM	gdT	0	0
+CD8 Naive	gdT	0	0
+CD8 TCM	gdT	0	0
+CD8 TEM	gdT	1	0.00476190476190476
+MAIT	gdT	0	0
+NK	gdT	4	0.0303030303030303
+Platelet	gdT	0	0
+Treg	gdT	0	0
+cDC1	gdT	0	0
+cDC2	gdT	0	0
+dnT	gdT	0	0
+gdT	gdT	0	0
+pDC	gdT	0	0
+B intermediate	pDC	0	0
+B memory	pDC	0	0
+B naive	pDC	0	0
+CD14 Mono	pDC	0	0
+CD16 Mono	pDC	0	0
+CD4 CTL	pDC	0	0
+CD4 Naive	pDC	0	0
+CD4 TCM	pDC	0	0
+CD4 TEM	pDC	0	0
+CD8 Naive	pDC	0	0
+CD8 TCM	pDC	0	0
+CD8 TEM	pDC	0	0
+MAIT	pDC	0	0
+NK	pDC	0	0
+Platelet	pDC	0	0
+Treg	pDC	0	0
+cDC1	pDC	0	0
+cDC2	pDC	0	0
+dnT	pDC	0	0
+gdT	pDC	0	0
+pDC	pDC	2	0.333333333333333
