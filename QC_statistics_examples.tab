@@ -1,0 +1,8 @@
+--dataset wg2_onek1k_subset	--level dataset	--in_dir wg2-cell_type_classification	--out_dir QC_statistics_examples
+--dataset wg2_onek1k_subset	--level Pool	--in_dir wg2-cell_type_classification	--out_dir QC_statistics_examples
+--dataset wg2_onek1k_subset	--level dataset	--md_vars metadata_variables.tab	--in_dir wg2-cell_type_classification	--out_dir QC_statistics_examples
+--dataset wg2_onek1k_subset	--level Pool	--md_vars metadata_variables.tab	--in_dir wg2-cell_type_classification	--out_dir QC_statistics_examples
+--dataset wg2_onek1k_subset	--level dataset	--downsampling downsampling.tab	--in_dir wg2-cell_type_classification	--out_dir QC_statistics_examples
+--dataset wg2_onek1k_subset	--level Pool	--downsampling downsampling.tab	--in_dir wg2-cell_type_classification	--out_dir QC_statistics_examples
+--dataset wg2_onek1k_subset	--level dataset	--md_vars metadata_variables.tab	--downsampling downsampling.tab	--in_dir wg2-cell_type_classification	--out_dir QC_statistics_examples
+--dataset wg2_onek1k_subset	--level Pool	--md_vars metadata_variables.tab	--downsampling downsampling.tab	--in_dir wg2-cell_type_classification	--out_dir QC_statistics_examples
