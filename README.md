@@ -50,12 +50,12 @@ The main input for the [add-on script](QC_statistics.R) is the metadata slot ([m
 * **Alternative:** You can also the WG2 seurat object ([reduced_data.RDS](/wg2-cell_type_classification/wg2_onek1k_subset/step4_reduce/reduced_data.RDS)). However, it will slow down the running time and memory of the script as we will need to read the full seurat object which can be very large depending on the number of cells (e.g., ~77K cells, 8.9G). 
 
 ### Required Data
-**wg1-qc_filtering**
-|-- azimuth_l1_l2.csv  
-|-- downsampling.tab  
-|-- metadata_variables.tab  
-|-- qc_mad.tab  
-|-- wg2-cell_type_classification  
+**wg1-qc_filtering**  
+|-- azimuth_l1_l2.csv    
+|-- downsampling.tab    
+|-- metadata_variables.tab    
+|-- qc_mad.tab    
+|-- wg2-cell_type_classification    
 
 #### QC-MAD combinations ([qc_mad.tab](qc_mad.tab))
 A tsv file that has in the:
