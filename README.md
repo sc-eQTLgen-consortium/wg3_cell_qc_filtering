@@ -301,7 +301,7 @@ tar -xvf QC_statistics_examples.files.tar.gz
 ```
 
 ## Running time and memory requirements
-* **[add-on script]**(QC_statistics.R):
+* [add-on script](QC_statistics.R):
 To speed up the running time and memory requirements of the **[add-on script]**(QC_statistics.R), we recommend to submit each of the commands in **3.1 and 3.2** of the **Running the add-on script** section as an independent job on your HPC infrastructure (i.e., run each job as an element of a job array). The running time and memory requirements will depend on:  
 1. The **size** of your dataset. Notice that the test dataset is a significantly down-sized and sub-sampled version of the whole dataset (# of cells=1,207 and # of donors=13). 
 2. Whether you already have the **metadata slot** ([metadata.reduced_data.RDS](/wg2-cell_type_classification/wg2_onek1k_subset/step4_reduce/metadata.reduced_data.RDS)) of the seurat object provided by WG2 pipeline, or you only have the **whole seurat object** [reduced_data.RDS](/wg2-cell_type_classification/wg2_onek1k_subset/step4_reduce/reduced_data.RDS) provided by WG2 pipeline. If possible, you should use the WG2 seurat object's metadata slot ([metadata.reduced_data.RDS](/wg2-cell_type_classification/wg2_onek1k_subset/step4_reduce/metadata.reduced_data.RDS)).
