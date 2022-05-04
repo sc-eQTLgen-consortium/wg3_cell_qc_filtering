@@ -51,12 +51,12 @@ Here is the structure of the [input directory for the test dataset](/wg2-cell_ty
         
 The main input for the [add-on script](QC_statistics.R) is the metadata slot ([metadata.reduced_data.RDS](/wg2-cell_type_classification/wg2_onek1k_subset/step4_reduce/metadata.reduced_data.RDS)) of the seurat object provided by WG2 pipeline ([reduced_data.RDS](/wg2-cell_type_classification/wg2_onek1k_subset/step4_reduce/reduced_data.RDS)). The WG2 pipeline is peforming the cell type classification of the non-QC filtered singlets predicted by WG1 pipeline.
 
-* **Recommended:** We recommend you to use the WG2 seurat object's metadata slot ([metadata.reduced_data.RDS](/wg2-cell_type_classification/wg2_onek1k_subset/step4_reduce/metadata.reduced_data.RDS)). It will speed up the running time and memory of the script. 
+* **Recommended:** We recommend you to use the WG2 seurat object's metadata slot ([metadata.reduced_data.RDS](/wg2-cell_type_classification/wg2_onek1k_subset/step4_reduce/metadata.reduced_data.RDS)). It will improve the running time and memory of the script. 
 
 * **Alternative:** You can also use the WG2 seurat object ([reduced_data.RDS](/wg2-cell_type_classification/wg2_onek1k_subset/step4_reduce/reduced_data.RDS)). However, it will slow down the running time and memory of the script as we will need to read the full seurat object which can be very large depending on the number of cells (e.g., ~77K cells, 8.9G). 
 
 *Of note*: 
-* At this moment, the WG2 pipeline is not providing the ([metadata.reduced_data.RDS](/wg2-cell_type_classification/wg2_onek1k_subset/step4_reduce/metadata.reduced_data.RDS)) yet. Although you can run the [add-on script](QC_statistics.R) using the whole seurat object, we encourage you to save the metadata slot with the name *metadata.reduced_data.RDS* in the step4_reduce/ directory provided by WG2 pipeline before running the [add-on script](QC_statistics.R) to speed up the running time.
+* At this moment, the WG2 pipeline is not providing the ([metadata.reduced_data.RDS](/wg2-cell_type_classification/wg2_onek1k_subset/step4_reduce/metadata.reduced_data.RDS)) yet. Although you can run the [add-on script](QC_statistics.R) using the whole seurat object, we encourage you to save the metadata slot with the name *metadata.reduced_data.RDS* in the step4_reduce/ directory provided by WG2 pipeline before running the [add-on script](QC_statistics.R) to improve the running time and memory of the script. 
 
 * In case your dataset contains V2 and V3 chemistries, you should create different metadata or seurat objects files in order to run this [add-on script](QC_statistics.R) separately. In this 
 
@@ -304,7 +304,7 @@ tar -xvf QC_statistics_examples.files.tar.gz
 ```
 
 ## Running time and memory requirements
-* [add-on script](QC_statistics.R): To speed up the running time and memory requirements of the **[add-on script]**(QC_statistics.R), we recommend to submit each of the commands in **3.1 and 3.2** of the **Running the add-on script** section as an independent job on your HPC infrastructure (i.e., run each job as an element of a job array). The running time and memory requirements will depend on:  
+* [add-on script](QC_statistics.R): To speed up the running time and improve the memory requirements of the **[add-on script]**(QC_statistics.R), we recommend to submit each of the commands in **3.1 and 3.2** of the **Running the add-on script** section as an independent job on your HPC infrastructure (i.e., run each job as an element of a job array). The running time and memory requirements will depend on:  
 1. The **size** of your dataset. Notice that the test dataset is a significantly down-sized and sub-sampled version of the whole dataset (# of cells=1,207 and # of donors=13). 
 2. Whether you already have the **metadata slot** ([metadata.reduced_data.RDS](/wg2-cell_type_classification/wg2_onek1k_subset/step4_reduce/metadata.reduced_data.RDS)) of the seurat object provided by WG2 pipeline, or you only have the **whole seurat object** [reduced_data.RDS](/wg2-cell_type_classification/wg2_onek1k_subset/step4_reduce/reduced_data.RDS) provided by WG2 pipeline. If possible, you should use the WG2 seurat object's metadata slot ([metadata.reduced_data.RDS](/wg2-cell_type_classification/wg2_onek1k_subset/step4_reduce/metadata.reduced_data.RDS)).
 
