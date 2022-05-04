@@ -2,6 +2,7 @@
 
 ################################## Load R packages ################################
 print('Loading R packages...')
+shhh <- suppressPackageStartupMessages
 shhh(library(Seurat))
 shhh(library(SeuratObject))
 shhh(library(stringr))
