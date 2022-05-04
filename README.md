@@ -58,7 +58,9 @@ The main input for the [add-on script](QC_statistics.R) is the metadata slot ([m
 *Of note*: 
 * At this moment, the WG2 pipeline is not providing the ([metadata.reduced_data.RDS](/wg2-cell_type_classification/wg2_onek1k_subset/step4_reduce/metadata.reduced_data.RDS)) yet. Although you can run the [add-on script](QC_statistics.R) using the whole seurat object, we encourage you to save the metadata slot with the name *metadata.reduced_data.RDS* in the step4_reduce/ directory provided by WG2 pipeline before running the [add-on script](QC_statistics.R) to improve the running time and memory of the script. 
 
-* In case your dataset contains V2 and V3 chemistries, you should create different metadata or seurat objects files in order to run this [add-on script](QC_statistics.R) separately. In this 
+* In case your dataset contains V2 and V3 chemistries, you should create different metadata or seurat objects files in order to run this [add-on script](QC_statistics.R) separately. If this had been the case of this test dataset, you would have ended up with two different datasets (e.g., wg2_onek1k_subset.V2 and wg2_onek1k_subset.V3), meaning that the [add-on script](QC_statistics.R) would have been run separately in each of these two datasets.
+
+* /wg2-cell_type_classification/wg2_onek1k_subset/step4_reduce/metadata.reduced_data.RDS
 
 ### Required Data
 **wg1-qc_filtering**  
