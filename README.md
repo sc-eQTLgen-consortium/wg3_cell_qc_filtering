@@ -309,10 +309,10 @@ tar -xvf QC_statistics_examples.files.tar.gz
 ## Exploring the QC filtering results for several datasets
 If you have run the [add-on script](QC_statistics.R) among several datasets, you can explore **all the outputs together** by running the **[QC_heatmaps.R](QC_heatmaps.R)** script. In this case, your `$output_directory` will have a directory for each of the datasets (e.g., dataset_1, dataset_2 and dataset_3) with the results of the [add-on script](QC_statistics.R):
 
-`$output_directory`
-├── dataset_1
-├── dataset_2
-├── dataset_3
+`$output_directory`  
+├── dataset_1  
+├── dataset_2  
+├── dataset_3  
 
 *Of note*: This **[QC_heatmaps.R](QC_heatmaps.R)** script will be also used to integrate the [add-on script](QC_statistics.R) results from a diverse set of datasets within the consortium in order to make the final decisions in the QC threshold selection committee. 
 
@@ -326,11 +326,11 @@ A tsv file that has only one column with the a dataset name per row (e.g., datas
 * It is assumed that the dataset names are the same as the ones of the directories in the `$output_directory`.
 * As an example:
 
-|   |  | 
-| ------------- | ------------- | 
-| dataset_1  |  
-| dataset_2 |  
-| dataset_3 | 
+|   |  |   
+| ------------- | ------------- |   
+| dataset_1  |    
+| dataset_2 |    
+| dataset_3 |   
 
 ### Running the [QC_heatmaps.R](QC_heatmaps.R)
 *Of note*: The functions called in the [add-on script](QC_statistics.R) are defined in an [external script](scripts/QC_functions.R).
