@@ -363,9 +363,10 @@ QC_heatmaps
     └── nCount_RNA_lower_1_5.percent.mt_upper_1_5  
         └── **dataset**  
             ├── Outlier_pct.label_n.pdf  
+            ├── ...    
         └── **Pool**  
-            ├── Outlier_pct.label_n.pdf              
-
+            ├── Outlier_pct.label_n.pdf        
+            ├── ...    
 
 ## Running time and memory requirements
 * [add-on script](QC_statistics.R): To speed up the running time and improve the memory requirements of the **[add-on script]**(QC_statistics.R), we recommend to submit each of the commands in **3.1 and 3.2** of the **Running the add-on script** section as an independent job on your HPC infrastructure (i.e., run each job as an element of a job array). The running time and memory requirements will depend on:  
