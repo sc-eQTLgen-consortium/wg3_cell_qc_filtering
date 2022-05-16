@@ -139,9 +139,10 @@ A tsv file that has in the:
 
 *Of note*:
 * Tab separated.
-* It is assumed that the metadata variable names are columns of the metadata file or metadata slot of the seurat object.
 * This file must have this header.
 * By default, the QC statistics will be summarized at the whole dataset. You can choose to summarize them by metadata variable.
+* In case you have another type of metadata variable (e.g. stimulation condition), you could add them. For example, 'pathogen' in the 1st column (md_var) and 'condition' in the 2nd column (type).
+* It is assumed that the metadata variable names are columns of the metadata file or metadata slot of the seurat object.
 * The metadata variables file provided for the test dataset is the [metadata_variables.tab](/metadata_variables.tab) file: 
 
 | md_var  | type |  
