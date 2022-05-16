@@ -3,8 +3,6 @@
 # options parser
 shhh <- suppressPackageStartupMessages
 shhh(library(optparse))
-shhh(library(stringr))
-shhh(library(stringi))
 option_list = list(
   make_option(c("--dataset"), action="store", default=NULL, type='character',
               help="Name of the dataset."),
@@ -27,6 +25,11 @@ cwd <- getwd()
 setwd(cwd)
 in.dir <- paste0(opt$in_dir, '/', dataset, '/', opt$qc_mad, '/')
 
+# Loading functions
+functions_fn <- 'scripts/QC_functions.R'
+print(paste0('Loading functions from: ',functions_fn))
+source(functions_fn)
+
 # Output directory
 out.dir <- paste0(opt$in_dir, '.files/')
 print(paste0('Creating output directory in: ',out.dir))
@@ -35,33 +38,6 @@ out_ss.dir <- paste0(out.dir, 'summary_statistics/')
 if(!dir.exists(out_ss.dir)){dir.create(out_ss.dir, recursive = T)}
 out_hp.dir <- paste0(out.dir, 'heatmap_plots/')
 if(!dir.exists(out_hp.dir)){dir.create(out_hp.dir, recursive = T)}
-
-#################################### Functions ####################################
-# 1. Accessory extract function
-extract.func <- function(fn, out_dir){
-  # File and directories (mymic)
-  fn_split <- unlist(str_split(fn, '/'))
-  out_temp.idx <- length(fn_split)
-  out_fn <- fn_split[out_temp.idx]
-  out_sdir <- paste(fn_split[-length(fn_split)],collapse='/')
-  out_fdir <- paste0(out_dir,  out_sdir, '/') 
-  if(!dir.exists(out_fdir)){dir.create(out_fdir, recursive = T)}
-  
-  # Copy file
-  out_fn.label <- paste0(out_fdir, out_fn)
-  print(paste0('Copying file into: ', out_fn.label))
-  cp_cmd <- paste0('cp ', fn, ' ', out_fdir)
-  system(cp_cmd)
-  return(NULL)
-}
-
-# 2. Main extract function
-extract_files <- function(type, outdirs, files){
-  out_dir.type <- outdirs[[type]]
-  fn_list.type <- files[[type]]
-  print(paste0('Extracting files in: ', out_dir.type))
-  res <- lapply(fn_list.type, function(i) extract.func(fn = i, out_dir = out_dir.type))
-}
 
 #################################### Extract files ####################################
 # Summary statistics
@@ -87,4 +63,3 @@ outdirs_list <- list(summary_statistics = out_ss.dir,
 extract_files.res <- sapply(names(files_list), function(i) extract_files(type = i, 
                                                                          outdirs = outdirs_list,
                                                                          files = files_list), simplify = F)
-
