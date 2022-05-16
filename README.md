@@ -5,7 +5,7 @@ We provide an **[add-on script](QC_statistics.R)** to explore the QC statistics 
 
 * **heatmap plots** showing the percentage and number of lost/kept cells for the metadata variables 
 
-Additionally, in case you have run this [add-on script](QC_statistics.R) among several datasets, you can explore **all the outputs together** by running the **[QC_heatmaps.R](QC_heatmaps.R)** script. See the **Exploring the QC results for several datasets** section.
+Additionally, in case you have run this [add-on script](QC_statistics.R) among several datasets, you can explore **all the outputs together** by running the **[QC_heatmaps.R](QC_heatmaps.R)** script. See the **Exploring the QC filtering results for several datasets** section.
 
 *Of note*: To run these scripts you should have successfully run WG1 and WG2 sc-eQTLGen consortium pipelines.
 
