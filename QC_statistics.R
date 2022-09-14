@@ -24,7 +24,7 @@ option_list = list(
 opt = parse_args(OptionParser(option_list=option_list))
 
 #################################### Set Variables ####################################
-# Input directory
+ # Input directory
 cwd <- getwd()
 setwd(cwd)
 in.dir <- paste0(opt$in_dir, '/')
@@ -133,6 +133,10 @@ print('Calculating MADs and assigning Outlier/NotOutlier tags per cell barcode..
 system.time(qc_tag.df <- qc_tag(so_md = so_metadata, 
                                 qc_mad_list = qc.mad_list,
                                 filter_level = opt$level))
+# Save extended output
+qc_tag_fn <- paste0(out.dir,'qc_tag.rds')
+print(paste0('Saving extended output in: ', qc_tag_fn))
+system.time(saveRDS(qc_tag.df, qc_tag_fn))
 
 # Summarize by dataset or by metadata
 print('Summarizing the data...')
@@ -173,7 +177,8 @@ if(!is.null(opt$md_vars)){
   ## main pheatmap function
   system.time(pheatmap_main.res <- sapply(md_types, function(i) pheatmap_main(md_type = i,
                                                                               tag_list = tag.out, 
-                                                                              out_dir = out.dir), simplify = F))
+                                                                              out_dir = out.dir,
+                                                                              width_list = width.list), simplify = F))
 }else{
   print('By dataset...')
   
