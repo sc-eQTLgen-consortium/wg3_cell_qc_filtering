@@ -364,7 +364,7 @@ pheatmap.func <- function(md_var, tag, value, display_numbers = "none", cluster_
 }
 
 # 12. Main heatmap function (by metadata type)
-pheatmap_main <- function(md_type, tag_list, out_dir, tags = c('NotOutlier','Outlier'), values = c('n','prop','pct'), display_numbers_vec = c('none', 'raw', 'n'), logical_vec = c(TRUE,FALSE)){
+pheatmap_main <- function(md_type, tag_list, out_dir, tags = c('NotOutlier','Outlier'), values = c('n','prop','pct'), display_numbers_vec = c('none', 'raw', 'n'), logical_vec = c(TRUE,FALSE), width_list){
   print(md_type)
   
   # Subdirectory
@@ -387,7 +387,7 @@ pheatmap_main <- function(md_type, tag_list, out_dir, tags = c('NotOutlier','Out
                                                              cluster_md = c_md,
                                                              tag_md_list = tag_md.list,
                                                              out_dir = out.sdir,
-                                                             width_list = width.list)))))))
+                                                             width_list = width_list)))))))
   return(pheatmap.res)
 }
 
