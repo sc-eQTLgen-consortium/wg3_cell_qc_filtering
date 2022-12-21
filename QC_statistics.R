@@ -30,7 +30,7 @@ setwd(cwd)
 in.dir <- paste0(opt$in_dir, '/')
 
 # Loading functions
-functions_fn <- 'scripts/QC_functions.R'
+functions_fn <- '/tools/wg1-qc_filtering/scripts/QC_functions.R'
 print(paste0('Loading functions from: ',functions_fn))
 source(functions_fn)
 
