@@ -1,32 +1,32 @@
-﻿L1;L2
-CD4T;Treg
-CD4T;CD4 Naive
-CD4T;CD4 TCM
-CD4T;CD4 TEM
-CD4T;CD4 CTL
-CD4T;CD4 Proliferating
-CD8T;CD8 Naive
-CD8T;CD8 TCM
-CD8T;CD8 TEM
-CD8T;CD8 Proliferating
-T_other;MAIT
-T_other;dnT
-T_other;gdT
-T_other;ILC
-NK;NK
-NK;NK Proliferating
-NK;NK_CD56bright
+L1;L2
+CD4_T;CD4 TCM
+CD4_T;CD4 Naive
+CD4_T;CD4 TEM
+CD4_T;CD4 CTL
+CD4_T;Treg
+CD4_T;CD4 Proliferating
+CD8_T;CD8 TEM
+CD8_T;CD8 Naive
+CD8_T;CD8 TCM
+CD8_T;CD8 Proliferating
 Mono;CD14 Mono
 Mono;CD16 Mono
-DC;cDC1
+NK;NK
+NK;NK_CD56bright
+NK;NK Proliferating
+B;B intermediate
+B;B naive
+B;B memory
+B;Plasmablast
+other_T;MAIT
+other_T;gdT
+other_T;dnT
 DC;cDC2
 DC;pDC
 DC;ASDC
-B;B naive
-B;B intermediate
-B;B memory
-B;Plasmablast
-HSPC;HSPC
+DC;cDC1
 Platelet;Platelet
+HSPC;HSPC
 Eryth;Eryth
+ILC;ILC
 Doublet;Doublet
