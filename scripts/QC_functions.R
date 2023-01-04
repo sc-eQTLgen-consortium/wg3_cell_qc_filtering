@@ -134,10 +134,11 @@ join_tag.func <- function(qc_list, qc_mad_list){
   system.time(qc_mad.cols <- paste0(names(qc_mad_list),'.mad'))
   system.time(qc.merged$mad_comb <- apply(qc.merged[,..qc_mad.cols],1,paste,collapse = ":")) #revisit (sub) --> 3.181 (10K)
   system.time(qc_tag.cols <- paste0(names(qc_mad_list),'.tag'))
-  system.time(qc.outliers <- qc.merged[apply(qc.merged[,..qc_tag.cols]=='Outlier', 1, all),])
-  system.time(qc.outliers$tag <- 'Outlier')
-  system.time(qc.merged <- data.table::merge.data.table(qc.merged, qc.outliers, by = colnames(qc.merged), all.x = TRUE)) #revisit --> 0.821 (10K)
-  system.time(qc.merged[is.na(qc.merged$tag),]$tag <- 'NotOutlier')
+  system.time(qc.merged$tag <- ifelse(qc.merged[[qc_tag.cols[1]]]=='NotOutlier' & qc.merged[[qc_tag.cols[2]]]=='NotOutlier', 'NotOutlier', 'Outlier'))
+  # system.time(qc.outliers <- qc.merged[apply(qc.merged[,..qc_tag.cols]=='Outlier', 1, all),])
+  # system.time(qc.outliers$tag <- 'Outlier')
+  # system.time(qc.merged <- data.table::merge.data.table(qc.merged, qc.outliers, by = colnames(qc.merged), all.x = TRUE)) #revisit --> 0.821 (10K)
+  # system.time(qc.merged[is.na(qc.merged$tag),]$tag <- 'NotOutlier')
   return(qc.merged)
 }
 
