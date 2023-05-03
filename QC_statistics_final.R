@@ -91,8 +91,6 @@ print('Modifying scPred classification to the metadata...')
 colnames(so_metadata)[which(colnames(so_metadata)=="scpred_prediction")]="scpred.l2.prediction"
 so_metadata["scpred.l1.prediction"] = pairs.df$l1[match(so_metadata$scpred.l2.prediction,pairs.df$l2)]
 
-system.time(so_metadata <- add_azimuth_l1(so_md = so_metadata, pairing = pairs.df))
-
 # Calculate MADs and assigning Outlier/NotOutlier tags per cell barcode
 print('Calculating MADs and assigning Outlier/NotOutlier tags per cell barcode...')
 system.time(qc_tag.df <- qc_tag(so_md = so_metadata, 
